@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const aboutTexts = document.querySelectorAll('.about-text .animated-text, .about-highlights .highlight-badge');
     aboutTexts.forEach(el => aboutObserver.observe(el));
 
+    const menuToggle = document.getElementById('menuToggle');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
     // Slide-in animation for education cards
 const educationCards = document.querySelectorAll('.education-card');
 const eduObserver = new IntersectionObserver((entries, observer) => {
