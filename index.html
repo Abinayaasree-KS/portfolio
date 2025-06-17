@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abinayaa Sree | Full Stack Developer - Portfolio</title>
+  <meta name="description" content="Abinayaa Sree's professional portfolio showcasing projects, skills, and experience in full stack development." />
+  <meta name="keywords" content="Abinayaa Sree, Full Stack Developer, React Developer, portfolio, projects, resume" />
+  <meta name="author" content="Abinayaa Sree" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="images/logo1.png" type="image/png">
+</head>
+
+<body>
+  <div class="floating-bg" id="floatingBackground"></div>
+  <div class="cursor-follower"></div>
+  <div class="mouse-particles"></div>
+  <div class="cursor-tail-container"></div>
+
+  <header>
+  <nav class="nav-purple">
+    <div class="logo">Abinayaa Sree</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+     
+       <button class="resume-button" onclick="openPDF()">Resume</button>
+
+      <button id="themeToggle" title="Toggle Theme">🌙</button>
+       <!-- <a href="https://abhijeetbhale.github.io/Portfolio/#projects" target = "_blank" class = "resume-button" download>Resume</a> -->
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+    <section id="home" class="hero-full">
+  <div class="hero-wrapper">
+    <div class="hero-left">
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Abinayaa Sree</span>
+      </h1>
+      <h2 class="hero-role">Software Developer</h2>
+      <p class="hero-tagline">Turning ideas into elegant and scalable solutions.</p>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/itsabiks" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Abinayaasree-KS" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:abisaran286@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <a href="#projects" class="btn-primary">View My Work</a>
+    </div>
+
+    <div class="hero-right">
+      <img src="images/profile.jpg" alt="Abinayaa Sree" class="hero-image" />
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="about" class="about-me">
+  <div class="container">
+    <h2 class="section-title">Who I Am</h2>
+
+    <div class="about-wrapper">
+      <div class="about-card glass">
+        <p class="animated-text delay-1 visible">
+          I'm a <strong>Abinayaa Sree K S, Full-Stack Developer</strong> with a passion for crafting clean, scalable, and intuitive solutions. I thrive at the intersection of design, development, and user experience.
+        </p>
+        <p class="animated-text delay-1 visible">
+          My toolbox includes <strong>JavaScript</strong>, <strong>Python</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>Django</strong>. From scripting ideas to building complex systems, I love writing code that makes a difference.
+        </p>
+        <p class="animated-text delay-1 visible">
+          I believe in <strong>collaboration, curiosity, and continuous learning</strong>. Whether it’s debugging a tough issue or architecting a system from scratch, I bring a problem-solving mindset to every challenge.
+        </p>
+        <blockquote class="quote delay-4">“Great software is built on great conversations.”</blockquote>
+      </div>
+
+      <div class="highlights delay-5">
+        <div class="highlight">
+          <i class="fas fa-lightbulb"></i>
+          <span>Logical Thinker</span>
+        </div>
+        <div class="highlight">
+          <i class="fas fa-users"></i>
+          <span>Team Collaborator</span>
+        </div>
+        <div class="highlight">
+          <i class="fas fa-code"></i>
+          <span>Clean Coder</span>
+        </div>
+        <div class="highlight">
+          <i class="fas fa-rocket"></i>
+          <span>Quick Learner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <section id="experience" class="experience-section fade-in">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+
+    <div class="experience-glass-card">
+      <div class="exp-header">
+        <h3 class="exp-role">React Developer</h3>
+        <button id="themeToggle" title="Toggle Theme" class="theme-toggle">
+  <a href="https://satyukt.com/" target="_blank" rel="noopener noreferrer" class="satyukt-link">
+  <img src="images/satyukt.png" alt="Satyukt Logo" class="satyukt-logo" />
+  <span class="satyukt-name">Satyukt</span>
+</a>
+
+
+
+
+</button>
+
+      </div>
+      <div class="exp-meta">
+        <span><i class="fas fa-calendar-alt"></i> Jul 2024 – Dec 2024</span>
+        <span><i class="fas fa-map-marker-alt"></i> Bengaluru</span>
+      </div>
+      <div class="exp-body">
+        <ul class="exp-points">
+          <li><i class="fas fa-bolt"></i> Migrated Sat2Farm from PHP to React, reducing load time by 50%.</li>
+          <li><i class="fas fa-cogs"></i> Developed 50+ Redux components and boosted API performance by 30%.</li>
+          <li><i class="fas fa-paint-brush"></i> Designed responsive UI that increased engagement by 25%.</li>
+          <li><i class="fas fa-bug"></i> Resolved 100+ bugs ensuring 20% better code stability.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">🛠️ My Skills</h2>
+
+    <div class="skills-grid">
+      <!-- Languages -->
+      <div class="skill-card">
+        <div class="card-header">
+          <i class="fas fa-terminal card-icon"></i>
+          <h3>Languages</h3>
+        </div>
+        <ul>
+          <li><i class="fas fa-code"></i> C, C++</li>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-html5"></i> HTML</li>
+        </ul>
+      </div>
+
+      <!-- Tools & Technologies -->
+      <div class="skill-card">
+        <div class="card-header">
+          <i class="fas fa-tools card-icon"></i>
+          <h3>Tools & Technologies</h3>
+        </div>
+        <ul>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-react"></i> React.js</li>
+          <li><i class="fab fa-node-js"></i> Node.js</li>
+          <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          <li><i class="fab fa-git-alt"></i> Git, GitHub</li>
+        </ul>
+      </div>
+
+      <!-- DB & Frameworks -->
+      <div class="skill-card">
+        <div class="card-header">
+          <i class="fas fa-database card-icon"></i>
+          <h3>Databases & Frameworks</h3>
+        </div>
+        <ul>
+          <li><i class="fas fa-database"></i> Relational DB</li>
+          <li><i class="fas fa-database"></i> MySQL</li>
+          <li><i class="fas fa-leaf"></i> MongoDB</li>
+          <li><i class="fab fa-python"></i> Django</li>
+          <li><i class="fas fa-fire"></i> Flask</li>
+          <li><i class="fas fa-laptop-code"></i> Java Swing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="education-section fade-in">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-user-graduate"></i> Education</h2>
+
+    <div class="education-grid">
+      <!-- School -->
+      <div class="education-card">
+        <h3 class="edu-institution">Saratha Matric. Hr. Sec. School</h3>
+        <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Erode</p>
+        <p class="edu-duration"><i class="fas fa-calendar-alt"></i> 2020 – 2021</p>
+        <p class="edu-score">Percentage: <strong>90.5%</strong></p>
+      </div>
+
+      <!-- College -->
+      <div class="education-card">
+        <h3 class="edu-institution">Coimbatore Institute of Technology</h3>
+        <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Coimbatore</p>
+        <p class="edu-duration"><i class="fas fa-calendar-alt"></i> 2021 – Present</p>
+        <p class="edu-score">CGPA: <strong>8.57</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="images/project1-thumbnail.jpg" alt="AI Calendar Assistant" />
+            <h3>AI Calendar Assistant</h3>
+            <p><strong>Problem:</strong> Manual scheduling via email is time-consuming and error-prone.</p>
+            <p><strong>Solution:</strong> A Flask-based assistant that handles Gmail replies to create, update, and delete Google Calendar events with 95% accuracy using Gemini LLM.</p>
+            <p><strong>My Role:</strong> Full-stack developer (Flask, JS, LLM integration)</p>
+            <div class="technologies-used">
+              <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Flask</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project2-thumbnail.jpg" alt="Foodie Fleet App" />
+            <h3>Foodie Fleet</h3>
+            <p><strong>Problem:</strong> Students faced long queues and inefficient food ordering.</p>
+            <p><strong>Solution:</strong> Developed a mobile-responsive Java Swing app with MySQL for ordering food seamlessly, used by 500+ students/day.</p>
+            <p><strong>My Role:</strong> Full-stack developer (Java + DB)</p>
+            <div class="technologies-used">
+              <span>Java</span> <span>MySQL</span> <span>Swing</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project3-thumbnail.jpg" alt="Verity Vision Fake News Detector" />
+            <h3>Verity Vision</h3>
+            <p><strong>Problem:</strong> Need for reliable news classification amid misinformation.</p>
+            <p><strong>Solution:</strong> Built a Flask app that classifies news articles as real or fake with 90% accuracy using logistic regression and TF-IDF vectors.</p>
+            <p><strong>My Role:</strong> Full-stack developer (ML backend + UI)</p>
+            <div class="technologies-used">
+              <span>Python</span> <span>Flask</span> <span>Pandas</span> <span>Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtext">I'd love to hear from you. Whether it's a project, opportunity, or just a hello — drop a message!</p>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="_replyto" required placeholder="john@example.com" />
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+    
+  </main>
+
+  <footer>
+  <div class="container">
+    <p>
+      &copy; <span id="current-year"></span>
+      <span >Abinayaa Sree</span>. All rights reserved.
+    </p>
+    <div class="footer-social-links">
+      <a href="https://linkedin.com/in/itsabiks" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Abinayaasree-KS" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:abisaran286@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
