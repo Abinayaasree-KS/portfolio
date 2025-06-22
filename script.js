@@ -3,11 +3,22 @@ function openPDF() {
   window.open('assets/ABINAYAA_SREE_K_S_71762131002.pdf', '_blank');
 }
 
+function toggleTheme() {
+  const body = document.body;
+  const themeToggle = document.getElementById('themeToggle');
+
+  body.classList.toggle('dark-theme');
+
+  // Change icon after toggle
+  themeToggle.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const header = document.querySelector('header');
   const navLinks = document.querySelectorAll('nav a');
   const heroSection = document.getElementById('home');
-  const themeToggle = document.getElementById('themeToggle');
+  // const themeToggle = document.getElementById('themeToggle');
   const scrollToTopBtn = document.getElementById('scrollToTopBtn');
   const aboutTexts = document.querySelectorAll('.about-text .animated-text, .about-highlights .highlight-badge');
   const menuToggle = document.getElementById('menuToggle');
@@ -19,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navLinksContainer.classList.toggle('show');
     });
   }
+
 
   // About text animation
   const aboutObserver = new IntersectionObserver((entries, observer) => {
@@ -103,19 +115,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Theme toggle
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      body.classList.toggle("dark-mode");
+//   // Theme toggle
+// if (themeToggle) {
+//   themeToggle.addEventListener("click", () => {
+//     document.body.classList.toggle("dark-theme");
+//     themeToggle.textContent = document.body.classList.contains("dark-theme") ? "☀️" : "🌙";
 
-      // Optional: change icon based on theme
-      if (body.classList.contains("dark-mode")) {
-        themeToggle.textContent = "☀️"; // Switch to light
-      } else {
-        themeToggle.textContent = "🌙"; // Switch to dark
-      }
-    });
-  }
+//     // Make sure cursor color changes too
+//     updateCursorColor(); 
+//   });
+// }
+
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", () => {

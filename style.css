@@ -117,36 +117,6 @@ header {
   color: #4b0073;
 }
 
-#themeToggle {
-  font-size: 1.2rem;
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-#themeToggle:hover {
-  transform: scale(1.2);
-}
-
-body.dark-theme header {
-  background: linear-gradient(135deg, #1b002c, #3c0068);
-}
-
-body.dark-theme .nav-links li a {
-  color: #d9cfff;
-}
-
-body.dark-theme .resume-button {
-  background: #d9cfff;
-  color: #2c0050;
-}
-
-body.dark-theme #themeToggle {
-  color: #ffffff;
-}
-
 /* Mobile Navbar Toggle Button */
 .menu-toggle {
   display: none;
@@ -1215,16 +1185,8 @@ footer .highlight {
 
 
 /* === Dark Theme (Purple Palette) === */
-body.dark-theme {
-  background-color: #16001f;
-  color: #f6eaff;
-}
+/* Default light theme */
 
-body.dark-theme header,
-body.dark-theme section,
-body.dark-theme footer {
-  background-color: #1e002a; /* Deep purple */
-}
 
 body.dark-theme a,
 body.dark-theme .logo,
@@ -1302,6 +1264,12 @@ body.dark-theme .skill-card {
   box-shadow: 0 0 20px rgba(171, 63, 252, 0.3);
   color: #f5eaff;
 }
+
+body.dark-theme {
+  background-color: #4f0457;
+  color: white;
+}
+
 
 /* Nav Links */
 body.dark-theme .nav-links a {
