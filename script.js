@@ -3,15 +3,15 @@ function openPDF() {
   window.open('assets/ABINAYAA_SREE_K_S_71762131002.pdf', '_blank');
 }
 
-// function toggleTheme() {
-//   const body = document.body;
-//   const themeToggle = document.getElementById('themeToggle');
+function toggleTheme() {
+  const body = document.body;
+  const themeToggle = document.getElementById('themeToggle');
 
-//   body.classList.toggle('dark-theme');
+  body.classList.toggle('dark-theme');
 
-//   // Change icon after toggle
-//   themeToggle.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
-// }
+  // Change icon after toggle
+  themeToggle.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -249,12 +249,12 @@ document.addEventListener('DOMContentLoaded', function () {
     tailDots.push({ el: dot, x: 0, y: 0 });
   }
 
-  // function updateCursorColor() {
-  //   const isDark = document.body.classList.contains('dark-theme');
-  //   tailDots.forEach(dot => {
-  //     dot.el.style.background = isDark ? 'rgba(223, 125, 242, 0.8)' : 'rgba(89, 6, 103, 0.8)';
-  //   });
-  // }
+  function updateCursorColor() {
+    const isDark = document.body.classList.contains('dark-theme');
+    tailDots.forEach(dot => {
+      dot.el.style.background = isDark ? 'rgba(223, 125, 242, 0.8)' : 'rgba(89, 6, 103, 0.8)';
+    });
+  }
 
   updateCursorColor();
 
